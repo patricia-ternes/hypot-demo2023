@@ -1,4 +1,4 @@
-from hypot.functions import addition, squared, sqroot
+from hypot.functions import addition, squared, sqroot, hypot
 
 # test addition
 def test_addition_int():
