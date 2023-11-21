@@ -1,5 +1,3 @@
-
-
 def addition(a, b):
     """This functions return a plus b.
 
@@ -9,7 +7,7 @@ def addition(a, b):
     :type b: int or float
     :return: The sum of the two input numbers
     :rtype: int or float
-    """    
+    """
     if isinstance(a, str):
         return "Please just use integer or float"
     elif isinstance(b, str):
@@ -17,7 +15,8 @@ def addition(a, b):
     else:
         return a + b
 
-#squared
+
+# squared
 def squared(a):
     """Calculate the square of a number
 
@@ -25,10 +24,11 @@ def squared(a):
     :type a: int or float
     :return: The square of input number
     :rtype: int or float
-    """    
-    return a*a
+    """
+    return a * a
 
-#sqroot
+
+# sqroot
 def sqroot(a):
     """Calculate the square root of a number
 
@@ -36,10 +36,11 @@ def sqroot(a):
     :type a: int or float
     :return: The square root of input number
     :rtype: float
-    """        
+    """
     return a**0.5
 
-#hypot
+
+# hypot
 def hypot(a, b):
     """Caculate the hypot for two inputs
 
@@ -49,9 +50,8 @@ def hypot(a, b):
     :type b: int or float
     :return: The hypot
     :rtype: float
-    """    
+    """
     sa = squared(a)
     sb = squared(b)
     sumAB = addition(sa, sb)
     return sqroot(sumAB)
-    
