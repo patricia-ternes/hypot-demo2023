@@ -1,11 +1,12 @@
 from hypot.functions import addition, squared, sqroot, hypot
+import pytest
 
 # test addition
 def test_addition_int():
     assert addition(4,7) == 4
 
 def test_addition_float():
-    assert addition(2.3, 7.92) == 10.22
+    assert addition(2.3, 7.92) == pytest.approx(10.22, 0.01)
 
 def test_addition_str():
     assert addition("a", "b") == "Please just use integer or float"
